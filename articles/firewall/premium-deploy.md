@@ -2,7 +2,7 @@
 title: Deploy and configure Azure Firewall Premium
 description: Learn how to deploy and configure Azure Firewall Premium.
 author: vhorne
-ms.service: firewall
+ms.service: azure-firewall
 services: firewall
 ms.topic: how-to
 ms.date: 02/28/2022
@@ -27,7 +27,7 @@ You'll use a template to deploy a test environment that has a central VNet (10.0
 - a firewall subnet (10.0.100.0/24)
 
 > [!IMPORTANT]
-> [!INCLUDE [Pricing](../../includes/bastion-pricing.md)]
+> [!INCLUDE [Pricing](~/reusable-content/ce-skilling/azure/includes/bastion-pricing.md)]
 
 A single central VNet is used in this test environment for simplicity. For production purposes, a [hub and spoke topology](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke) with peered VNets is more common.
 
@@ -85,7 +85,7 @@ You can use `curl` to control various HTTP headers and simulate malicious traffi
 
    ```
    { “msg” : “TCP request from 10.0.100.5:16036 to 10.0.20.10:80. Action: Alert. Rule: 2032081. IDS: 
-   USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Tojan was 
+   USER_AGENTS Suspicious User Agent (HaxerMen). Priority: 1. Classification: A Network Trojan was 
    detected”}
    ```
 

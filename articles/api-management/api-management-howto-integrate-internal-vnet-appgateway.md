@@ -5,7 +5,7 @@ description: Set up and configure Azure API Management in an internal virtual ne
 services: api-management
 author: dlepow
 
-ms.service: api-management
+ms.service: azure-api-management
 ms.topic: how-to
 ms.author: danlep
 ms.date: 04/17/2023
@@ -32,13 +32,13 @@ For architectural guidance, see:
 
 ## Prerequisites
 
-[!INCLUDE [updated-for-az](../../includes/updated-for-az.md)]
+[!INCLUDE [updated-for-az](~/reusable-content/ce-skilling/azure/includes/updated-for-az.md)]
 
 To follow the steps described in this article, you must have:
 
 * An active Azure subscription
 
-    [!INCLUDE [quickstarts-free-trial-note](../../includes/quickstarts-free-trial-note.md)]
+    [!INCLUDE [quickstarts-free-trial-note](~/reusable-content/ce-skilling/azure/includes/quickstarts-free-trial-note.md)]
 
 * Certificates
      - Personal Information Exchange (PFX) files for API Management's custom host names: gateway, developer portal, and management endpoint.
@@ -86,7 +86,7 @@ Throughout this guide, you need to define several variables. Naming is based on 
 
 ```powershell
 # These variables must be changed.
-$subscriptionId = "00000000-0000-0000-0000-000000000000"      # GUID of your Azure subscription
+$subscriptionId = "aaaa0a0a-bb1b-cc2c-dd3d-eeeeee4e4e4e"      # GUID of your Azure subscription
 $domain = "contoso.net"                                       # The custom domain for your certificate
 $apimServiceName = "apim-contoso"                             # API Management service instance name, must be globally unique    
 $apimDomainNameLabel = $apimServiceName                       # Domain name label for API Management's public IP address, must be globally unique
